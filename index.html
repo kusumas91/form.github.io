@@ -2,13 +2,65 @@
 <html lang="en">
 <head>
     <title>Student Details</title>
+
+    <style>
+        .dd{
+           
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: beige;
+            font-size: 19px;
+        }
+        #sd{
+            margin-left: 40%;
+            margin-right: 40%;
+            border: 2px solid black;
+            text-align: center;
+            background-color: blanchedalmond;
+            
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: white;
+        }
+        a:hover{
+            color:black ;
+        }
+        a{
+            border: 3px solid black;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 30px;
+            background-color: rgb(54, 161, 54);
+            margin-left: 620px;
+           
+        
+            
+        }
+        .pe{
+            font-size: 20px;
+            background-color: rgb(231, 202, 163);
+
+
+        }
+        body{
+            background-image: url(imagebg.jpg);
+        }
+
+
+    </style>
+
+
 </head>
 <body>
     <form action="message.html">
-    <fieldset >
-        <legend>Personal Details</legend>
+    <h3 id="sd">Student Details</h3>
+    <fieldset class="dd">
+        <legend class="pe">Personal Details</legend>
         <label for="fname">First Name</label>
-        <input type="text"placeholder="" name="fname" id="fname">
+        <input type="text"placeholder="" required name="fname" id="fname">
         <br><br>
         <label for="mname">Middle Name</label>
         <input type="text" placeholder="" name="mname" id="mname" >
@@ -20,10 +72,10 @@
         <input type="date"placeholder="" name="dob" id="dob">
         <br><br>
         <label for="mail">Email</label>
-        <input type="email"placeholder="" name="mail" id="mail">
-    </fieldset>
-    <fieldset >
-        <legend>Educational Details</legend>
+        <input type="email"placeholder="" required name="mail" id="mail">
+    </fieldset><br>
+    <fieldset class="dd">
+        <legend class="pe">Educational Details</legend>
         <label for="dept" >DEPARTMENT</label><br><br>
         <input type="radio"  name="dept" id="cse">
         <label for="cse">CSE</label>
@@ -34,7 +86,7 @@
         <input type="radio"  name="dept" id="civil">
         <label for="civil">Civil</label>
         <br><br>
-        <label for="yop">YOP</label>
+        <label for="yop">Year of Passing</label>
         <input list="yog" name="yop" id="yop" >
         <br><br>
         <datalist id="yog">
@@ -61,7 +113,9 @@
         <label for="java">JAVA</label>
 
     </fieldset>
-    <input type="submit">
+    <br><br>
+    <a href="message.html">Submit</a>
+   
     </form>
 
     
